@@ -10,7 +10,6 @@ import {
   ArrowTopRightOnSquareIcon
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import Layout from '@/components/layout/Layout'
 
 const categories = [
   { id: 'all', name: 'All Vessels', count: 24 },
@@ -173,7 +172,7 @@ export default function Products() {
   }
 
   return (
-    <Layout>
+    <>
 
       {/* Products Section */}
       <section className="py-16 bg-gray-50">
@@ -381,6 +380,6 @@ export default function Products() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }

@@ -9,7 +9,6 @@ import {
   ChartBarIcon,
   ArrowTrendingUpIcon
 } from '@heroicons/react/24/outline'
-import Layout from '@/components/layout/Layout'
 
 const facilities = [
   {
@@ -87,7 +86,7 @@ const productionStats = [
 
 export default function GroupCapacity() {
   return (
-    <Layout>
+    <>
       {/* Production Statistics */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -277,6 +276,6 @@ export default function GroupCapacity() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }

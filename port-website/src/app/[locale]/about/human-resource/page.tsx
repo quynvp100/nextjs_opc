@@ -9,7 +9,6 @@ import {
   CogIcon,
   WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline'
-import Layout from '@/components/layout/Layout'
 
 const departments = [
   {
@@ -100,7 +99,7 @@ const benefits = [
 
 export default function HumanResource() {
   return (
-    <Layout>
+    <>
       {/* Workforce Overview */}
       <section className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -298,6 +297,6 @@ export default function HumanResource() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }

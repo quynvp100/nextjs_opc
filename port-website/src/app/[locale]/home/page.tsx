@@ -19,7 +19,6 @@ import {
   EnvelopeIcon,
   ArrowTopRightOnSquareIcon
 } from '@heroicons/react/24/outline'
-import Layout from '@/components/layout/Layout'
 
 const services = [
   {
@@ -173,7 +172,7 @@ export default function Home() {
   }, [totalSlides])
 
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative h-screen text-white overflow-hidden flex items-center">
         {/* Background Image */}
@@ -246,7 +245,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-              className="lg:pl-8"
+              className="hidden lg:block lg:pl-8"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-black/20 backdrop-blur-sm border border-white/10 w-full">
                 <div className="relative w-full h-[500px] lg:h-[450px]">
@@ -685,6 +684,6 @@ export default function Home() {
         <div className="absolute top-3/4 right-10 w-1.5 h-1.5 bg-blue-400/60 rounded-full animate-pulse animation-delay-2000"></div>
         <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-white/60 rounded-full animate-pulse animation-delay-4000"></div>
       </section>
-    </Layout>
+    </>
   )
 }

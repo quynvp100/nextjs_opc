@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from 'react-hot-toast';
+import { headers } from 'next/headers';
 import "./globals.css";
 
 const inter = Inter({
@@ -74,13 +75,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const locale = headersList.get('x-locale') || 'vi';
+
   return (
-    <html lang="vi">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://pacificport.vn" />

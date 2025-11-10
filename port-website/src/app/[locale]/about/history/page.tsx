@@ -7,7 +7,6 @@ import {
   GlobeAsiaAustraliaIcon,
   RocketLaunchIcon
 } from '@heroicons/react/24/outline'
-import Layout from '@/components/layout/Layout'
 
 const timeline = [
   {
@@ -77,7 +76,7 @@ const achievements = [
 
 export default function History() {
   return (
-    <Layout>
+    <>
       {/* Timeline Section */}
       <section className="py-24 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -241,6 +240,6 @@ export default function History() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }

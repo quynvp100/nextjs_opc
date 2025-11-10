@@ -14,7 +14,6 @@ import {
   UserIcon,
   BuildingOfficeIcon
 } from '@heroicons/react/24/outline'
-import Layout from '@/components/layout/Layout'
 
 type FormData = {
   name: string
@@ -112,7 +111,7 @@ export default function Contact() {
   }
 
   return (
-    <Layout>
+    <>
 
       {/* Contact Content */}
       <section className="py-16 bg-gray-50">
@@ -465,6 +464,6 @@ export default function Contact() {
           </motion.div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }

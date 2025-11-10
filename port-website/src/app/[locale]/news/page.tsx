@@ -9,7 +9,6 @@ import {
   UserIcon
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import Layout from '@/components/layout/Layout'
 
 const newsArticles = [
   {
@@ -115,7 +114,7 @@ export default function News() {
   }
 
   return (
-    <Layout>
+    <>
       {/* News Header */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -325,6 +324,6 @@ export default function News() {
           </motion.div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }

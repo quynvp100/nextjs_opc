@@ -9,7 +9,6 @@ import {
   ShieldCheckIcon,
   UserGroupIcon
 } from '@heroicons/react/24/outline'
-import Layout from '@/components/layout/Layout'
 
 const initiatives = [
   {
@@ -98,7 +97,7 @@ const socialImpact = [
 
 export default function SocialResponsibility() {
   return (
-    <Layout>
+    <>
       {/* Impact Statistics */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -311,6 +310,6 @@ export default function SocialResponsibility() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
